@@ -35,7 +35,22 @@ cp -r HPFQcompilation.cc ../pifo-machine/
 cd ../pifo-machine/
 ```
 
-TBD
+Replace the `pifo_machine.cc` with `HPFQcompilation.cc`:
+
+```
+mv pifo_machine.cc pifo_machine_bak.cc
+mv HPFQcompilation.cc pifo_machine.cc
+make clean
+make
+```
+
+Execute the executable file `pifo_machine`:
+
+```
+./pifo_machine
+```
+
+The output could be found at [HPFQ_results.txt](HPFQ_results.txt) in this repository.
 
 ## Known Issues:
 
